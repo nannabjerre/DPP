@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Playground Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dpp.css">
+</head>
+<body>
+<div class="app">
+  <!-- Playground Guide Page -->
+  <section class="playground-guide" id="playground-guide">
+    <!-- Back button and page title -->
+    <header class="playground-guide__header">
+      <a href="dpp.html" class="materials-page__back-button" aria-label="Back to home">
+        <img src="images/kompan-logo.jpg" alt="Kompan Logo" class="materials-page__logo">
+      </a>
+      <h1 class="playground-guide__title">Playground Guide</h1>
+    </header>
+
+    <!-- Materials Section -->
+    <section class="playground-guide__card card">
+      <h2 class="playground-guide__section-title">Materials</h2>
+
+      <!-- Material Breakdown Progress Bars -->
+      <div class="playground-guide__material-stats">
+        <div class="playground-guide__material-row">
+          <span class="playground-guide__material-label">
+            <span class="info-icon playground-guide__info-icon">i</span>
+            Post Industrial Recycled
+          </span>
+          <span class="playground-guide__material-value">5.3%</span>
+          <div class="playground-guide__progress-container">
+            <div class="playground-guide__progress-bar playground-guide__progress-bar--industrial" style="width: 5.3%"></div>
+          </div>
+        </div>
+
+        <div class="playground-guide__material-row">
+          <span class="playground-guide__material-label">
+            <span class="info-icon playground-guide__info-icon">i</span>
+            Post Consumer Recycled
+          </span>
+          <span class="playground-guide__material-value">62.5%</span>
+          <div class="playground-guide__progress-container">
+            <div class="playground-guide__progress-bar playground-guide__progress-bar--consumer" style="width: 62.5%"></div>
+          </div>
+        </div>
+
+        <div class="playground-guide__material-row">
+          <span class="playground-guide__material-label">
+            <span class="info-icon playground-guide__info-icon">i</span>
+            Virgin Material
+          </span>
+          <span class="playground-guide__material-value">32.2%</span>
+          <div class="playground-guide__progress-container">
+            <div class="playground-guide__progress-bar playground-guide__progress-bar--virgin" style="width: 32.2%"></div>
+          </div>
+        </div>
+
+        <div class="playground-guide__material-row">
+          <span class="playground-guide__material-label">
+            <span class="info-icon playground-guide__info-icon">i</span>
+            End of Life Recyclability
+          </span>
+          <span class="playground-guide__material-value">98.7%</span>
+          <div class="playground-guide__progress-container">
+            <div class="playground-guide__progress-bar playground-guide__progress-bar--recyclability" style="width: 98.7%"></div>
+          </div>
+        </div>
+      </div>
+      <a href="ddp_materials.html" class="playground-guide__read-more">Read more</a>
+    </section>
+
+    <!-- Spare Parts Section -->
+    <section class="playground-guide__card card">
+      <div class="playground-guide__image-container">
+        <div class="playground-guide__placeholder-image" aria-label="Spare Parts Image">
+          <img src="images/spareparts.jpg" alt="Spare Parts" class="playground-guide__image">
+        </div>
+      </div>
+      <h2 class="playground-guide__card-title">Spare Parts</h2>
+      <p class="playground-guide__card-text">
+        Despite our efforts to create the best quality materials for your playground it might need repairing at some point in its journey.
+      </p>
+      <p class="playground-guide__card-text">
+        Luckily our spare parts shop has just the part you need to repair your playground and extend its lifetime.
+      </p>
+      <br>
+      <br>
+      <div class="playground-guide__button-container">
+        <a href="#shop" class="playground-guide__shop-button">Go to shop</a>
+      </div>
+    </section>
+
+    <!-- Build to Last Section -->
+    <section class="playground-guide__card card">
+      <div class="playground-guide__image-container">
+        <div class="playground-guide__placeholder-image" aria-label="Build to Last Image">
+          <img src="images/build%20to%20last.jpg" alt="Build to Last" class="playground-guide__image">
+        </div>
+      </div>
+      <h2 class="playground-guide__card-title">Build to Last</h2>
+      <p class="playground-guide__card-text">
+        We make an effort to create high quality and long lasting products. Take a look at our timeline to see, how you can extend the life time of your product and how to reuse it after it has reached its end of life.
+      </p>
+      <a href="product_lifetime.html" class="playground-guide__read-more">Read more</a>
+    </section>
+
+    <!-- Warranties Section -->
+    <section class="playground-guide__card card">
+      <div class="playground-guide__content-with-image">
+        <div class="playground-guide__content">
+          <h2 class="playground-guide__card-title">Warranties</h2>
+          <p class="playground-guide__card-text">
+            We offer up to life time warranty on our products, depending on the material.
+          </p>
+          <p class="playground-guide__card-text">
+            Curious about our warranties? Visit our webpage.
+          </p>
+        </div>
+        <div class="playground-guide__side-image">
+          <div class="playground-guide__placeholder-image playground-guide__placeholder-image--vertical" aria-label="Warranties Image">
+            <img src="images/warranties.jpg" alt="Warranties" class="playground-guide__image">
+          </div>
+        </div>
+      </div>
+      <a href="#warranties" class="playground-guide__read-more playground-guide__read-more--left">Read more</a>
+    </section>
+
+    <!-- Bureau Veritas Section -->
+    <section class="playground-guide__card card playground-guide__card--bureau">
+      <div class="playground-guide__image-container">
+        <div class="playground-guide__placeholder-image" aria-label="Bureau Veritas Image">
+          <img src="images/bureau veritas.jpg" alt="Bureau Veritas" class="playground-guide__image">
+        </div>
+      </div>
+      <h2 class="playground-guide__card-title">Bureau Veritas</h2>
+      <p class="playground-guide__card-text">
+        Third-party verification is key to documenting these impacts, as it contributes to trust and transparency for every stakeholder.
+      </p>
+      <a href="#bureau-veritas" class="playground-guide__read-more">Read more</a>
+    </section>
+  </section>
+
+  <!-- Material Info Popup -->
+  <div id="material-info-popup" class="info-popup">
+    <div class="info-popup__content">
+      <button class="info-popup__close" onclick="closeMaterialInfoPopup()">&times;</button>
+      <h3 class="info-popup__title" id="material-info-title">Material Information</h3>
+      <p class="info-popup__text" id="material-info-text">Information about the selected material will appear here.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Handle back button navigation
+  document.addEventListener('DOMContentLoaded', function() {
+    const backButton = document.querySelector('.materials-page__back-button');
+    if (backButton) {
+      backButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'dpp.html';
+      });
+    }
+
+    // Add event listeners for info icons
+    const infoIcons = document.querySelectorAll('.playground-guide__info-icon');
+    infoIcons.forEach(icon => {
+      icon.addEventListener('click', function(e) {
+        e.stopPropagation();
+        openMaterialInfoPopup(this.closest('.playground-guide__material-label').textContent.trim());
+      });
+    });
+  });
+
+  // Material info popup functions
+  function openMaterialInfoPopup(materialName) {
+    const popup = document.getElementById('material-info-popup');
+    const titleElement = document.getElementById('material-info-title');
+    const textElement = document.getElementById('material-info-text');
+
+    // Remove the "i" icon text from the material name
+    materialName = materialName.replace('i', '').trim();
+
+    // Set title
+    titleElement.textContent = materialName;
+
+    // Set different text based on material type
+    switch(materialName) {
+      case 'Post Industrial Recycled':
+        textElement.textContent = 'Post-industrial recycled materials come from manufacturing waste that has been recovered and repurposed, rather than being sent to landfill.';
+        break;
+      case 'Post Consumer Recycled':
+        textElement.textContent = 'Post-consumer recycled materials come from products that have been used by consumers and would otherwise have been disposed of as waste.';
+        break;
+      case 'Virgin Material':
+        textElement.textContent = 'Virgin materials are resources that have never been used or consumed before and are in their raw state before processing.';
+        break;
+      case 'End of Life Recyclability':
+        textElement.textContent = 'End of life recyclability refers to the percentage of a product that can be recycled after it has reached the end of its useful life.';
+        break;
+      default:
+        textElement.textContent = 'Information about ' + materialName + ' will be displayed here.';
+    }
+
+    // Show popup
+    popup.style.display = 'flex';
+  }
+
+  function closeMaterialInfoPopup() {
+    document.getElementById('material-info-popup').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

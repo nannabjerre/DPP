@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Let's Transform Waste Into Play</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dpp.css">
+</head>
+<body>
+<div class="app">
+    <!-- Transform Waste Page -->
+    <section class="transform-waste" id="transform-waste">
+        <!-- Back button and page title -->
+        <header class="transform-waste__header">
+            <a href="dpp.html" class="transform-waste__back-button" aria-label="Back to home">
+                <img src="images/kompan-logo.jpg" alt="Kompan Logo" class="transform-waste__logo">
+            </a>
+            <h1 class="transform-waste__title">Let's Transform <br> Waste Into Play</h1>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="transform-waste__intro card">
+            <h2 class="transform-waste__intro-title">What difference does it make that you sort your waste at home?</h2>
+            <p class="transform-waste__intro-text">
+                Let us show you, how we turn your waste into buildings blocks for laughter and learning for children and child-like spirits.
+            </p>
+        </section>
+
+        <!-- Waste Transformation Items -->
+        <section class="transform-waste__items">
+            <!-- Textile Waste Accordion -->
+            <div class="transform-waste__item card">
+                <div class="transform-waste__item-header">
+                    <div class="transform-waste__image-container">
+                        <img src="images/textile_waste.jpg" alt="Textile Waste" class="transform-waste__image">
+                    </div>
+                    <h3 class="transform-waste__item-title">How does KOMPAN use my textile waste?</h3>
+                </div>
+                <div class="transform-waste__content" id="textile-content">
+                    <p class="transform-waste__content-text">
+                        After you've recycled your old trousers and t-shirts they get shredded into fibres that can be used to make new clothes, carpets or for playground components - like we do at KOMPAN.
+                    </p>
+                    <div class="transform-waste__example">
+                        <div class="transform-waste__example-image-container">
+                            <img src="images/TexMade.jpg" alt="TexMade Post" class="transform-waste__example-image">
+                        </div>
+                        <p class="transform-waste__example-text">
+                            Like our TexMade Posts that are made from old textiles and recycled plastic bags
+                        </p>
+                    </div>
+                </div>
+                <div class="transform-waste__expand">
+                    <button class="transform-waste__expand-button" onclick="toggleExpand('textile-content', this)">
+                        <span class="transform-waste__expand-icon">▼</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plastic Waste Accordion -->
+            <div class="transform-waste__item card">
+                <div class="transform-waste__item-header">
+                    <div class="transform-waste__image-container">
+                        <img src="images/plastic_waste.jpg" alt="Plastic Waste" class="transform-waste__image">
+                    </div>
+                    <h3 class="transform-waste__item-title">How does KOMPAN use my plastic waste?</h3>
+                </div>
+                <div class="transform-waste__content" id="plastic-content">
+                    <p class="transform-waste__content-text">
+                        Your used plastic- and shampoo bottles are sorted, cleaned and melted into small plastic balls that can be used in new materials. At KOMPAN we use your recycled plastic in several of our products.
+                    </p>
+                    <div class="transform-waste__example">
+                        <div class="transform-waste__example-image-container">
+                            <img src="images/plastic_house.jpg" alt="EcoCare Panel" class="transform-waste__example-image">
+                        </div>
+                        <p class="transform-waste__example-text">
+                            Our EcoCare panels are made from >95% post consumer recycled waste
+                        </p>
+                    </div>
+                    <div class="transform-waste__example">
+                        <div class="transform-waste__example-image-container">
+                            <img src="images/plastic_board.jpg" alt="Deck" class="transform-waste__example-image">
+                        </div>
+                        <p class="transform-waste__example-text">
+                            Our Decks are made from 75% post-consumer recycled waste
+                        </p>
+                    </div>
+                </div>
+                <div class="transform-waste__expand">
+                    <button class="transform-waste__expand-button" onclick="toggleExpand('plastic-content', this)">
+                        <span class="transform-waste__expand-icon">▼</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fishing Nets Accordion -->
+            <div class="transform-waste__item card">
+                <div class="transform-waste__item-header">
+                    <div class="transform-waste__image-container">
+                        <img src="images/fishing_nets.jpg" alt="Old Fishing Nets" class="transform-waste__image">
+                    </div>
+                    <h3 class="transform-waste__item-title">How does KOMPAN use old fishing nets?</h3>
+                </div>
+                <div class="transform-waste__content" id="nets-content">
+                    <p class="transform-waste__content-text">
+                        Fishing nets are made of different kinds of plastic. With new technologies fishing nets can be collected and recycled in many ways. The nets get shredded into small pieces, get pelletised and transformed into new materials.
+                    </p>
+                    <div class="transform-waste__example">
+                        <div class="transform-waste__example-image-container">
+                            <img src="images/teal.jpg" alt="Teal Panel" class="transform-waste__example-image">
+                        </div>
+                        <p class="transform-waste__example-text">
+                            Like our colour <em>teal</em> that is made from recycled ocean waste like fishing nets & ropes.
+                        </p>
+                    </div>
+                </div>
+                <div class="transform-waste__expand">
+                    <button class="transform-waste__expand-button" onclick="toggleExpand('nets-content', this)">
+                        <span class="transform-waste__expand-icon">▼</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Section with Children Image -->
+        <section class="transform-waste__conclusion card">
+            <div class="transform-waste__conclusion-image-container">
+                <img src="images/transform_waste_into_play.jpg" alt="Children on Playground" class="transform-waste__conclusion-image">
+            </div>
+            <h2 class="transform-waste__conclusion-title">You can transform waste into play</h2>
+            <p class="transform-waste__conclusion-text">
+                By sorting your waste correctly you make it possible for us to transform waste into play. Keep up the good work and join us on our journey towards a greener and better future for our children.
+            </p>
+        </section>
+    </section>
+</div>
+
+<script>
+    // Toggle expand/collapse for accordion items
+    function toggleExpand(contentId, button) {
+        const content = document.getElementById(contentId);
+        const icon = button.querySelector('.transform-waste__expand-icon');
+
+        if (content.style.maxHeight) {
+            // Collapse
+            content.style.maxHeight = null;
+            button.classList.remove('transform-waste__expand-button--active');
+        } else {
+            // Expand
+            content.style.maxHeight = content.scrollHeight + "px";
+            button.classList.add('transform-waste__expand-button--active');
+        }
+    }
+
+    // Initialize all accordion sections as closed on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide all content sections initially
+        document.querySelectorAll('.transform-waste__content').forEach(function(content) {
+            content.style.maxHeight = null;
+        });
+
+        // Set all icons to down arrow
+        document.querySelectorAll('.transform-waste__expand-icon').forEach(function(icon) {
+            icon.textContent = '▼';
+        });
+
+        // Remove active class from all expand buttons
+        document.querySelectorAll('.transform-waste__expand-button').forEach(function(button) {
+            button.classList.remove('transform-waste__expand-button--active');
+        });
+
+        // Handle back button navigation
+        const backButton = document.querySelector('.transform-waste__back-button');
+        if (backButton) {
+            backButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'dpp.html';
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

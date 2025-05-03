@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Materials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dpp.css">
+</head>
+<body>
+<div class="app">
+    <!-- Environmental Footprint Materials Page -->
+    <section class="materials-page" id="environmental-footprint">
+        <!-- Back button and page title -->
+        <header class="materials-page__header">
+            <a href="dpp.html" class="materials-page__back-button" aria-label="Back to home">
+                <img src="images/kompan-logo.jpg" alt="Kompan Logo" class="materials-page__logo">
+            </a>
+            <h1 class="materials-page__title">Materials</h1>
+        </header>
+
+        <!-- Product Overview Section -->
+        <section class="materials-page__card card">
+            <div class="materials-page__image-container">
+                <!-- Placeholder for Product Image -->
+                <div class="materials-page__placeholder-image">
+                    <img src="images/playground_stock_nb.jpg" alt="Product Image Placeholder" class="materials-page__placeholder-image">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="materials-page__details">
+                <div class="materials-page__detail-row">
+                    <span class="materials-page__detail-label">Product ID</span>
+                    <span class="materials-page__detail-value">PCM100831-0951</span>
+                </div>
+                <div class="materials-page__detail-row">
+                    <span class="materials-page__detail-label">Color</span>
+                    <span class="materials-page__detail-value">Teal</span>
+                </div>
+                <div class="materials-page__detail-row">
+                    <span class="materials-page__detail-label">Dimensions</span>
+                    <span class="materials-page__detail-value">447 x 410 x 320 cm</span>
+                </div>
+                <div class="materials-page__detail-row">
+                    <span class="materials-page__detail-label">Weight</span>
+                    <span class="materials-page__detail-value">642,9 kg</span>
+                </div>
+                <div class="materials-page__detail-row">
+                    <span class="materials-page__detail-label">Capacity</span>
+                    <span class="materials-page__detail-value">20 users</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials List Section -->
+        <section class="materials-page__materials-list">
+            <!-- HDPE (Expandable) -->
+            <div class="material-accordion">
+                <!-- HDPE Header (Always visible) -->
+                <div class="material-accordion__header material-accordion__header--highlight" onclick="toggleAccordion('hdpe-content')">
+                    <span class="material-accordion__title">
+                        <span class="info-icon" onclick="toggleInfoPopup(event)">i</span>
+                        HDPE
+                    </span>
+                    <span class="material-accordion__arrow" id="hdpe-arrow">&gt;</span>
+                </div>
+
+                <!-- HDPE Content (Hidden by default) -->
+                <div class="material-accordion__content" id="hdpe-content">
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">Net Weight kg</span>
+                        <span class="material-accordion__detail-value">182,1 kg</span>
+                    </div>
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">% of Total</span>
+                        <span class="material-accordion__detail-value">28%</span>
+                    </div>
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">Virgin</span>
+                        <span class="material-accordion__detail-value">10%</span>
+                    </div>
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">Post Industrial Recycled</span>
+                        <span class="material-accordion__detail-value">0%</span>
+                    </div>
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">Post Consumer Recycled</span>
+                        <span class="material-accordion__detail-value">90%</span>
+                    </div>
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">End of Life Recyclability</span>
+                        <span class="material-accordion__detail-value">100%</span>
+                    </div>
+                    <div class="material-accordion__detail-row">
+                        <span class="material-accordion__detail-label">Kg CO2e</span>
+                        <span class="material-accordion__detail-value">135 kg</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TexMade -->
+            <div class="material-accordion">
+                <div class="material-accordion__header">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        TexMade
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Steel/Metal -->
+            <div class="material-accordion">
+                <div class="material-accordion__header material-accordion__header--highlight">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Steel/Metal
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Plastic -->
+            <div class="material-accordion">
+                <div class="material-accordion__header">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Plastic
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Aluminum -->
+            <div class="material-accordion">
+                <div class="material-accordion__header material-accordion__header--highlight">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Aluminum
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Stainless Steel -->
+            <div class="material-accordion">
+                <div class="material-accordion__header">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Stainless Steel
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Rope -->
+            <div class="material-accordion">
+                <div class="material-accordion__header material-accordion__header--highlight">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Rope
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- HPL -->
+            <div class="material-accordion">
+                <div class="material-accordion__header">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        HPL
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Rubber -->
+            <div class="material-accordion">
+                <div class="material-accordion__header material-accordion__header--highlight">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Rubber
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Other -->
+            <div class="material-accordion">
+                <div class="material-accordion__header">
+                    <span class="material-accordion__title">
+                        <span class="info-icon">i</span>
+                        Other
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+
+            <!-- Total -->
+            <div class="material-accordion">
+                <div class="material-accordion__header material-accordion__header--highlight">
+                    <span class="material-accordion__title">
+                        Total
+                    </span>
+                    <span class="material-accordion__arrow">&gt;</span>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- Material Improvements Section -->
+        <section class="materials-page__card card">
+            <h2 class="materials-page__section-title">Material Improvements</h2>
+
+            <!-- Before and After Comparison -->
+            <div class="materials-page__comparison">
+                <div class="materials-page__comparison-item">
+                    <p class="materials-page__comparison-label">Before</p>
+                    <div class="materials-page__placeholder-image materials-page__placeholder-image--small" aria-label="Before Image Placeholder">
+                        <img src="images/old_pg.jpg" class="materials-page__placeholder-image materials-page__placeholder-image--small">
+                    </div>
+                </div>
+                <div class="materials-page__comparison-item">
+                    <p class="materials-page__comparison-label">After</p>
+                    <div class="materials-page__placeholder-image materials-page__placeholder-image--small" aria-label="After Image Placeholder">
+                        <img src="images/new_pg.jpg" class="materials-page__placeholder-image materials-page__placeholder-image--small">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recycled Content Section -->
+            <div class="materials-page__recycled-content">
+                <h3 class="materials-page__sub-title">Recycled content</h3>
+                <div class="materials-page__chart-container">
+                    <div class="materials-page__placeholder-chart" aria-label="Recycled Content Chart Placeholder">
+                        <img src="images/improvement.jpg" class="materials-page__placeholder-chart">
+                    </div>
+                </div>
+
+                <p class="materials-page__description">
+                    For this specific product we have used our TexMade posts made of recycled textiles and plastic bottles, our Decks made of 75% post consumer waste and our HDPE colour panels made from post consumer and ocean waste.
+                </p>
+
+                <p class="materials-page__description">
+                    This has increased the use of recycled materials by 50 percentage points.
+                </p>
+                <!-- Reduced Carbon Emission Section -->
+                <section class="materials-page__card card">
+                    <h2 class="materials-page__section-title">Reduced Carbon Emission</h2>
+                    <!-- Placeholder for Carbon Emission Chart -->
+                    <div class="materials-page__chart-container">
+                        <div class="materials-page__placeholder-chart" aria-label="Carbon Emission Chart Placeholder">
+                            <img src="images/reduced_emission.jpg" class="materials-page__placeholder-chart">
+                        </div>
+                    </div>
+                    <p>
+                        The increase in use of recycled materials has led to a 53% decrease in carbon emission for this product compared to using virgin materials.
+                    </p>
+            </div>
+        </section>
+    </section>
+
+    <!-- HDPE Info Popup -->
+    <div id="info-popup" class="info-popup">
+        <div class="info-popup__content">
+            <button class="info-popup__close" onclick="closeInfoPopup()">&times;</button>
+            <h3 class="info-popup__title">HDPE</h3>
+            <p class="info-popup__text">High-density polyethylene (HDPE) is a thermoplastic polymer produced from the monomer ethylene. It is sometimes called "alkathene" or "polythene" when used for HDPE pipes. It is often used in the production of plastic bottles, corrosion-resistant piping, and plastic lumber.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAccordion(contentId) {
+        const content = document.getElementById(contentId);
+        const arrow = content.previousElementSibling.querySelector('.material-accordion__arrow');
+
+        // Toggle content visibility
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            arrow.innerHTML = '&gt;';
+            arrow.classList.remove('material-accordion__arrow--expanded');
+        } else {
+            content.style.display = 'block';
+            arrow.innerHTML = '&#10095;'; // Still using > but will rotate with CSS
+            arrow.classList.add('material-accordion__arrow--expanded');
+        }
+    }
+
+    // Handle back button
+    document.addEventListener('DOMContentLoaded', function() {
+        const backButton = document.querySelector('.materials-page__back-button');
+        if (backButton) {
+            backButton.addEventListener('click', function(e) {
+                window.location.href = 'dpp.html';
+            });
+        }
+    });
+
+    // Info popup functions
+    function toggleInfoPopup(event) {
+        // Stop the click from triggering the accordion
+        event.stopPropagation();
+
+        // Show the popup
+        document.getElementById('info-popup').style.display = 'flex';
+    }
+
+    function closeInfoPopup() {
+        document.getElementById('info-popup').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

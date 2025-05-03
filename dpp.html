@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>App Interface</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dpp.css">
+</head>
+<body>
+<div class="app">
+  <!-- Frame 1: Product Passport Home/Landing Page -->
+  <section class="product-passport" id="product-passport">
+    <header class="product-passport__header">
+      <h1 class="product-passport__title">Product Passport</h1>
+    </header>
+
+    <!-- Welcome popup that slides in from right -->
+    <div class="product-passport__popup" id="welcomePopup" style="display: block;">
+      <div class="product-passport__popup-content">
+        <button class="product-passport__popup-close" id="closePopup" aria-label="Close popup">&times;</button>
+        <h2 class="product-passport__welcome">Welcome to Your Product Passport</h2>
+        <p class="product-passport__description">This is your playground's very own passport with product and sustainability information.</p>
+      </div>
+    </div>
+
+    <!-- Environmental Footprint Card with properly positioned read more link -->
+    <section class="product-passport__card card product-passport__card--environmental">
+      <div class="product-passport__content">
+        <div class="product-passport__image-container">
+          <img src="images/playground_stock_nb.jpg" class="product-passport__image" alt="Playground Equipment">
+        </div>
+        <h3 class="product-passport__section-title">Environmental Footprint of Your Product</h3>
+
+        <div class="product-passport__fact-row">
+          <div class="product-passport__icon">
+            <img src="images/carbon.jpg" alt="CO2 Icon" class="product-passport__icon-img">
+          </div>
+          <div class="product-passport__fact-content">
+            <p class="product-passport__fact">
+              This installation's carbon footprint is <strong>1,049.9 kg CO₂</strong>, equal to 31,020 half liter plastic bottles. The average person emits around 545,455 bottles yearly.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-passport__fact-row">
+          <div class="product-passport__icon">
+            <img src="images/recycle.jpg" alt="Recycling Icon" class="product-passport__icon-img">
+          </div>
+          <div class="product-passport__fact-content">
+            <p class="product-passport__fact">
+              Made with <strong>67.7% recycled materials</strong>, this installation saves 16,441 plastic bottles of emission compared to using all virgin materials!
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="ddp_materials.html" class="product-passport__read-more">Read more</a>
+    </section>
+
+    <!-- Transforming Waste Section -->
+    <section class="product-passport__card card" id="transforming-waste-card">
+      <div class="product-passport__card-image-container">
+        <img src="images/fishnet.jpg" class="product-passport__image" alt="Recycled Materials Network">
+      </div>
+      <h3 class="product-passport__card-title">Transforming Waste Into Play</h3>
+      <p class="product-passport__card-text">
+        When talking about post consumer waste, we actually mean the waste you produce at home.
+      </p>
+      <p class="product-passport__card-text">
+        Curious to see, how we transform your waste into play?
+      </p>
+      <a href="transform_waste.html" class="product-passport__read-more">Read more</a>
+    </section>
+
+    <!-- Professionals Section -->
+    <section class="product-passport__card card" id="professionals-card">
+      <div class="product-passport__card-image-container">
+        <img src="images/professionals.jpg" class="product-passport__image" alt="Product Documentation">
+      </div>
+      <h3 class="product-passport__card-title">For Professionals and Curious Minds</h3>
+      <p class="product-passport__card-text">
+        In this section you can expect to find detailed information about materials, product lifetime, warranties, spare parts and more.
+      </p>
+      <a href="dpp_pg_guide.html" class="product-passport__read-more">Read more</a>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="product-passport__card card">
+      <div class="product-passport__image-container">
+        <img src="images/mission.jpg" class="product-passport__image" alt="Playground Equipment">
+      </div>
+      <h3 class="product-passport__card-title">Our Mission</h3>
+      <p class="product-passport__card-text">
+        We strive to create happy and healthy environments and communities. Children's well-being is our top priority, which is why we focus on developing solutions that broaden perspectives — for both children and adults.
+      </p>
+      <br>
+      <a href="our_mission.html" class="product-passport__read-more">Read more</a>
+    </section>
+
+    <!-- Supply Chain Section -->
+    <section class="product-passport__card card">
+      <div class="product-passport__image-container">
+        <img src="images/supplychain.jpg" class="product-passport__image" alt="Playground Equipment">
+      </div>
+      <h3 class="product-passport__card-title">Supply Chain</h3>
+      <p class="product-passport__card-text">
+        All of our materials are sourced in Europe and our production is at home in Europe too.
+      </p>
+      <p class="product-passport__card-text">
+        Curious about our supply chain?
+      </p>
+      <a href="supply_chain.html" class="product-passport__read-more">Read more</a>
+    </section>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize app
+      console.log('App initialized');
+
+      // Handle welcome popup
+      const welcomePopup = document.getElementById('welcomePopup');
+      const closePopupBtn = document.getElementById('closePopup');
+
+      if (closePopupBtn && welcomePopup) {
+        closePopupBtn.addEventListener('click', function() {
+          welcomePopup.style.display = 'none';
+        });
+      }
+
+      // Ensure popup is correctly sized for iPhone viewport
+      function adjustForViewport() {
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Make adjustments for iPhone viewport if needed
+        if (viewportWidth <= 390) { // iPhone 14/15 width
+          // Ensure popup doesn't exceed screen bounds
+          if (welcomePopup) {
+            welcomePopup.style.width = 'calc(85% - 40px)';
+            welcomePopup.style.maxHeight = `${viewportHeight * 0.3}px`;
+            welcomePopup.style.overflowY = 'auto';
+          }
+        }
+      }
+
+      // Run on load and resize
+      adjustForViewport();
+      window.addEventListener('resize', adjustForViewport);
+    });
+  </script>
+</div>
+</body>
+</html>
